@@ -5,21 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- scss -->
     <link rel="stylesheet" href="./dist/css/style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     
     <title>Teambit</title>
 
 </head>
 <body>
 
+    <div id="root">
 
     <!-- header -->
-    <h1>ciao</h1>
+    <header>
+        <div class="container">
+        <nav class="flex">
+            <div class="nav_left flex">asd</div>
+            <div class="nav_right flex">asd</div>
+        </nav>
+
+        <div class="jumbo flex wrap">
+            <div class="jumbo_left flex column">
+                <h1>Understand, recognize and develop your people</h1>
+                <p>Teambit helps teams create a high performing culture with regular feedback.</p>
+                 <div class="flex sign_up">
+                     <button class="btn">
+                         <img :src="logo_google" style="width: 15px;" alt="">
+                         Sign up with Google</button>
+                         <span>or</span>
+                     <button class="btn">
+                         <img :src="logo_slack" style="width: 15px;" alt="">
+                         Sign up with Google</button>
+                 </div>
+                 <div class="email_signup">
+                     <a href="" class="email_signup">or use your email address <i class="fas fa-arrow-right"></i></a>
+                 </div>
+            </div>
+            
+            <div class="jumbo_right flex">
+                <img src="./assets/img/header/jumbotron/illustration-main.jpg" alt="">
+            </div>
+        </div>
+        
+            
+
+        </div>
+    </header>
     <!-- main -->
+    <main>
 
+    </main>
     <!-- footer -->
+    <footer>
 
+    </footer>
+    </div>
 
+    <!-- vuejs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- js -->
-    <script src="./dist/css/script.js"></script>
+    <script src="./dist/js/script.js"></script>
 </body>
 </html>

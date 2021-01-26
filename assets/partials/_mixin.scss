@@ -1,0 +1,13 @@
+@mixin btn {
+
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: $sign_up_color;
+    border: 1px solid $text_white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    
+}

@@ -1,0 +1,45 @@
+@media all and (min-width: 320px) and (max-width: 550px) {
+
+    .jumbo {
+        .jumbo_left,.jumbo_right, .sign_up {
+            width: calc(100%) !important;
+            text-align: center;
+        }
+          .jumbo_right {
+              img {
+                  height: 100% !important;
+              }
+          }
+        .sign_up {
+            justify-content: center;
+        }
+    }
+    
+
+
+}
+
+@media all and (min-width: 551px) and (max-width: 998px) {
+    .jumbo {
+        .jumbo_left,
+        .jumbo_right {
+            width: calc(100%) !important;
+            text-align: center !important;
+
+        }
+        .jumbo_right {
+            img {
+                height: 100% !important;
+            }
+        }
+        .sign_up {
+            justify-content: center;
+        }
+    }
+
+}
+
+@media all and (min-width: 999px) {
+
+     
+}

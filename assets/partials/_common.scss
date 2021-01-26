@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $text_color;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}

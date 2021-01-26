@@ -1,12 +1,9 @@
 @import 'partials/_variables';
+@import 'partials/_mixin';
 @import 'partials/_common';
+@import 'partials/_header';
+@import 'partials/_main';
+@import 'partials/_footer';
 @import 'partials/_mediaquery';
 
 
-h1 {
-    color: $test;
-}
-
-h3{
-    color:$bg_dark;
-}
