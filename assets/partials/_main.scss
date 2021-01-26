@@ -1,3 +1,19 @@
 main {
     background-color: $main_color;
-}
+
+    .main_card_container {
+      flex-wrap: wrap;
+      justify-content: center;
+      .card_main {
+        width: calc(100%/3);
+        align-items: center;
+      }
+    }
+  
+
+    
+    }
+
+    
+
+  

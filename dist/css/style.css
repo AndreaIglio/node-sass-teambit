@@ -73,6 +73,14 @@ header .jumbo .jumbo_right img {
 main {
   background-color: #FFE7D2;
 }
+main .main_card_container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .main_card_container .card_main {
+  width: calc(100%/3);
+  align-items: center;
+}
 
 footer {
   background-color: white;
@@ -89,6 +97,10 @@ footer {
   .jumbo .sign_up {
     justify-content: center;
   }
+
+  .card_main {
+    width: calc(100%) !important;
+  }
 }
 @media all and (min-width: 551px) and (max-width: 998px) {
   .jumbo .jumbo_left,
@@ -101,5 +113,9 @@ footer {
   }
   .jumbo .sign_up {
     justify-content: center;
+  }
+
+  .card_main {
+    width: calc(100%) !important;
   }
 }

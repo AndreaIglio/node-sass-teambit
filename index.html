@@ -48,13 +48,34 @@
             </div>
         </div>
         
-            
-
         </div>
     </header>
     <!-- main -->
     <main>
-
+        <section id="main_first" class="flex column">
+            <div class="container">
+                <div v-for="(title, index) in main_first_section" :key="index" class="flex main_card_container">
+                    <h2> {{title.title}}</h2>
+                    <div class="flex column card_main" v-for="(card, index) in title.cards" :key="index">
+                        <img :src="card.img" style="height: 50%;" alt="">
+                        <p>{{card.text}}</p>
+                    </div>
+                    <img :src="title.jumbo_pic" style="width: 300px;" alt="">
+                </div>
+            </div>
+        </section>
+         <section id="main_second" class="flex column">
+             <div class="container">
+                 <div v-for="(title, index) in main_second_section" :key="index" class="flex main_card_container">
+                     <h2> {{title.title}}</h2>
+                     <div class="flex column card_main" v-for="(card, index) in title.cards" :key="index">
+                         <img :src="card.img" style="height: 50%;" alt="">
+                         <p>{{card.text}}</p>
+                     </div>
+                     <img :src="title.jumbo_pic" style="width: 300px;" alt="">
+                 </div>
+             </div>
+         </section>
     </main>
     <!-- footer -->
     <footer>
