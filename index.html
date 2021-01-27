@@ -36,7 +36,7 @@
                          <span>or</span>
                      <button class="btn">
                          <img :src="logo_slack" style="width: 15px;" alt="">
-                         Sign up with Google</button>
+                         Sign up with Slack</button>
                  </div>
                  <div class="email_signup">
                      <a href="" class="email_signup">or use your email address <i class="fas fa-arrow-right"></i></a>
@@ -81,16 +81,52 @@
          <section id="main_third" class="flex column">
              <div class="flex info_main" v-for="(item, index) in main_third_section" :key="index">
                  <div class="info_card flex">
-                 <div class="flex">
-                <img :src="item.left_img" style="width: 450px;" alt="">
+                    <div class="flex info_card_img">
+                        <img :src="item.left_img" style="width: 100%;" alt="">
+                    </div>
+                    <div class="flex column info_card_description">
+                        <h2>{{item.title}}</h2>
+                        <p>{{item.description}}</p>
+                        <a href="">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <img :src="item.right_img" style="width: 100%;" alt="">
+                    </div>
                 </div>
-                <div class="flex column">
-                    <h2>{{item.title}}</h2>
-                    <p>{{item.description}}</p>
-                    <a href="">Learn more <i class="fas fa-arrow-right"></i></a>
-                    <img :src="item.right_img" style="width: 50%;" alt="">
-                </div>
-                </div>
+             </div>
+         </section>
+
+         <section id="main_fourth" class="flex column">
+             <div class="chat column flex">
+                 <h1>See Teambit for yourself. Get started in seconds <img src="./assets/img/main/section_4/happy.svg" alt=""></h1>
+
+                 <div class="card_chat flex column">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto, placeat ipsum soluta et natus?</p>
+                     <br>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate eligendi commodi sapiente cupiditate, sunt vel! Accusantium nihil libero quaerat et atque similique, voluptate temporibus maiores ut deleniti eum saepe suscipit. </p>
+                     <br>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sapiente, quam quasi veritatis nobis accusantium.</p>
+                     <br>
+                     <div class="sender flex">
+                         <img src="./assets/img/main/section_4/alex.png"alt="">
+                         <img src="./assets/img/main/section_4/bohdan.png" alt="">
+                         <div class="sender_details flex column">
+                             <p>Alex and Bohdan</p>
+                             <span>Co-Founders at Teambit</span>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="btn_chat flex">
+                   <button class="btn">
+                       <img :src="logo_google" style="width: 15px;" alt="">
+                       Sign up with Google</button>
+                   <span>or</span>
+                   <button class="btn">
+                       <img :src="logo_slack" style="width: 15px;" alt="">
+                       Sign up with Slack</button>
+                       </div>
+                       <div class="email_signup">
+                           <a href="" class="email_signup">or use your email address <i
+                                   class="fas fa-arrow-right"></i></a>
+                       </div>
              </div>
          </section>
     </main>

@@ -20,6 +20,53 @@
         width: calc(100%) !important;
     }
 
+
+     .info_card {
+         flex-wrap: wrap;
+
+         .info_card_img {
+             width: 100% !important;
+             padding-bottom: 100px;
+             align-items: center;
+             justify-content: center;
+
+             img {
+                 width: 80% !important;
+             }
+         }
+
+         .info_card_description {
+             width: 100% !important;
+             justify-content: space-between;
+             align-items: center;
+             h2 {
+                 text-align: center;
+             }
+             p {
+                 margin: 20px 20px;
+                 text-align: center;
+             }
+             a {
+                 margin: 20px 0px;
+             }
+
+             img {
+                 width: 60% !important;
+             }
+         }
+
+     }
+
+
+     .chat {
+         width: 80% !important;
+         h1 {
+             width: 70% !important;
+         }
+          .sender {
+              width: 100% !important;
+          }
+     }
 }
 
 @media all and (min-width: 551px) and (max-width: 998px) {
@@ -43,6 +90,55 @@
      .card_main {
          width: calc(100%) !important;
      }
+
+
+      .info_card {
+          flex-wrap: wrap;
+
+          .info_card_img {
+              width: 100% !important;
+              padding-bottom: 100px;
+              align-items: center;
+              justify-content: center;
+              img {
+                  width: 80% !important;
+              }
+          }
+
+          .info_card_description {
+              width: 100% !important;
+              justify-content: space-between;
+              align-items: center ;
+
+              h2 {
+                   text-align: center;
+               }
+              p {
+                  margin: 30px 20px;
+                  text-align: center;
+              }
+              a {
+                  margin: 20px 0px;
+              }
+              img {
+                  width: 60% !important;
+              }
+          }
+
+      }
+
+      .chat {
+          width: 80% !important;
+          h1 {
+              width: 70% !important;
+          }
+
+          .sender {
+              width: 60% !important;
+          }
+      }
+
+
 }
 
 @media all and (min-width: 999px) {

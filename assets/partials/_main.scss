@@ -17,7 +17,9 @@ main {
 
     #main_third {
 
-
+        .info_main {
+            margin-top: 30px;
+        }
 
         .info_main:nth-child(2n+2) {
             justify-content: flex-end;
@@ -27,10 +29,69 @@ main {
         }
 
         .info_card {
-            width: 80%;
+            flex-wrap: wrap;
+            .info_card_img {
+                width: 60%;
+                padding-bottom: 100px;
+            }
+            .info_card_description {
+                width: 20%;
+                justify-content: space-between;
+                h2{
+                    line-height: 2;
+                }
+                p {
+                    line-height: 2;
+                }
+            }
+            
         }
+        
     }
   
+
+    #main_fourth {
+        background-color: $main_color;
+        justify-content: center;
+        align-items: center;
+        .chat {
+            align-items: center;
+            width: 50%;
+            h1 {
+                text-align: center;
+                font-size: 45px;
+                line-height: 2;
+            }
+            .card_chat {
+                background-color: $text_white;
+                border: 1px solid $sign_up_color;
+                border-radius: 10px;
+                padding: 30px;
+                justify-content: space-between;
+                .sender {
+                    width: 80%;
+                    justify-content: space-between;
+                    .sender_details {
+                        p{
+                            color: $sign_up_color;
+                        }
+                        justify-content: center;
+                    }
+                }
+            }
+
+
+            .btn_chat {
+                align-items: center;
+                margin: 30px 0px;
+            }
+
+            .btn {
+                @include btn;
+            }
+        }
+
+    }
     
     }
 

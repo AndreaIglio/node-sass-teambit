@@ -55,25 +55,25 @@ let root = new Vue({
           "Empower your teammates to know in real time what they are doing well and what they need to improve",
       },
       {
-        left_img: "./assets/img/main/section_3/1.jpg",
-        right_img: "./assets/img/main/section_3/2.jpg",
-        title: "Feedback to help teammates improve",
+        left_img: "./assets/img/main/section_3/4.jpg",
+        right_img: "./assets/img/main/section_3/3.jpg",
+        title: "Surveys to help the team be better",
         description:
-          "Empower your teammates to know in real time what they are doing well and what they need to improve",
+          "Get real-time insights into your team with research-backed, lightweight and regular surveys.",
       },
       {
-        left_img: "./assets/img/main/section_3/1.jpg",
-        right_img: "./assets/img/main/section_3/2.jpg",
-        title: "Feedback to help teammates improve",
+        left_img: "./assets/img/main/section_3/5.jpg",
+        right_img: "./assets/img/main/section_3/6.jpg",
+        title: "Reviews to help teammates get a fair evaluation",
         description:
-          "Empower your teammates to know in real time what they are doing well and what they need to improve",
+          "Make better compensation and promotion decisions with objective and quick perfomance reviews.",
       },
       {
-        left_img: "./assets/img/main/section_3/1.jpg",
-        right_img: "./assets/img/main/section_3/2.jpg",
-        title: "Feedback to help teammates improve",
+        left_img: "./assets/img/main/section_3/8.jpg",
+        right_img: "./assets/img/main/section_3/7.jpg",
+        title: "Praise to help teammates feel valued",
         description:
-          "Empower your teammates to know in real time what they are doing well and what they need to improve",
+          "Make it habit to recognize and praise people who do great work.",
       },
     ],
   },
