@@ -6,13 +6,37 @@ main {
         .main_card_container {
             flex-wrap: wrap;
             justify-content: center;
-
+            padding-bottom: 80px;
+            
+            h2{
+                margin-bottom: 50px;
+                padding: 0px 100px;
+                text-align: center;
+                width: 100%;
+            }
+            
             .card_main {
                 width: calc(100%/3);
                 align-items: center;
+                justify-content: space-around;
+                img {
+                    height: 40%
+                    
+                }
+                
+            }
+
+            img {
+                margin-top: 50px;
             }
         }
 
+    }
+
+    #main_first {
+        .main_card_container {
+            border-bottom: 1px solid lightgrey;
+        }
     }
 
     #main_third {

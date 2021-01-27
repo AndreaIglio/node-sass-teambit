@@ -3,6 +3,9 @@ let root = new Vue({
   data: {
     logo_google: "./assets/img/logo/google-logo.svg",
     logo_slack: "./assets/img/logo/slack-logo.svg",
+    navbar: [
+      'Solutions', 'Pricing', 'Blog', 'Sign in',
+    ],
     main_first_section: [
       {
         title:
@@ -11,15 +14,15 @@ let root = new Vue({
         cards: [
           {
             img: "./assets/img/main/section_1/hardcore.png",
-            text: "lorem",
+            text: "They are hardcore, formal and disconnected",
           },
           {
             img: "./assets/img/main/section_1/nofeedback.png",
-            text: "lorem",
+            text: "They don't encourage regular feedback",
           },
           {
             img: "./assets/img/main/section_1/notsafe.png",
-            text: "lorem",
+            text: "They don't make it safe to speak up",
           },
         ],
       },
@@ -32,19 +35,18 @@ let root = new Vue({
         cards: [
           {
             img: "./assets/img/main/section_2/lightweight.png",
-            text: "lorem",
+            text: "It's lightweight fun and interconnected",
           },
           {
             img: "./assets/img/main/section_2/feedbacksuggestions.png",
-            text: "lorem",
+            text: "It encourages regular feedback with contextual requests",
           },
           {
             img: "./assets/img/main/section_2/safe.png",
-            text: "lorem",
+            text: "It creates a safe environment for dialog",
           },
         ],
       },
-      {},
     ],
     main_third_section: [
       {
@@ -108,5 +110,20 @@ let root = new Vue({
       },
     ],
   },
-  methods: {},
+  methods: {
+
+    openNav: function () { 
+
+      var x = document.getElementById('collapse');
+      if( x.style.display == 'block'){
+        x.style.display = 'none';
+
+      }
+      else {
+        x.style.display = 'block';
+      }
+
+     }
+
+  },
 });

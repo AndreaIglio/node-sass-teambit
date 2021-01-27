@@ -12,18 +12,19 @@ var root = new Vue({
   data: {
     logo_google: "./assets/img/logo/google-logo.svg",
     logo_slack: "./assets/img/logo/slack-logo.svg",
+    navbar: ['Solutions', 'Pricing', 'Blog', 'Sign in'],
     main_first_section: [{
       title: "Traditional people processes lead to disengagement and turnover",
       jumbo_pic: "./assets/img/main/section_1/before.png",
       cards: [{
         img: "./assets/img/main/section_1/hardcore.png",
-        text: "lorem"
+        text: "They are hardcore, formal and disconnected"
       }, {
         img: "./assets/img/main/section_1/nofeedback.png",
-        text: "lorem"
+        text: "They don't encourage regular feedback"
       }, {
         img: "./assets/img/main/section_1/notsafe.png",
-        text: "lorem"
+        text: "They don't make it safe to speak up"
       }]
     }],
     main_second_section: [{
@@ -31,15 +32,15 @@ var root = new Vue({
       jumbo_pic: "./assets/img/main/section_2/after.png",
       cards: [{
         img: "./assets/img/main/section_2/lightweight.png",
-        text: "lorem"
+        text: "It's lightweight fun and interconnected"
       }, {
         img: "./assets/img/main/section_2/feedbacksuggestions.png",
-        text: "lorem"
+        text: "It encourages regular feedback with contextual requests"
       }, {
         img: "./assets/img/main/section_2/safe.png",
-        text: "lorem"
+        text: "It creates a safe environment for dialog"
       }]
-    }, {}],
+    }],
     main_third_section: [{
       left_img: "./assets/img/main/section_3/1.jpg",
       right_img: "./assets/img/main/section_3/2.jpg",
@@ -78,7 +79,17 @@ var root = new Vue({
       element: ['How to change your company culture: a four-step framework', 'How teams can be more productive by killing 8-hour workday', 'How to build high performing teams inspired by nature', "View all"]
     }]
   },
-  methods: {}
+  methods: {
+    openNav: function openNav() {
+      var x = document.getElementById('collapse');
+
+      if (x.style.display == 'block') {
+        x.style.display = 'none';
+      } else {
+        x.style.display = 'block';
+      }
+    }
+  }
 });
 
 /***/ }),

@@ -1,11 +1,52 @@
 header{
     background-color: white;
     nav {
+        position: relative;
         justify-content: space-between;
+        border-bottom: 1px solid black;
+        padding: 10px 0px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        ul {
+            list-style-type: none;
+            li {
+                display: inline;
+                padding: 0px 20px;
+            }
+        }
+        
+        .btn {
+            @include btn;
+            background-color: white;
+            border: 1px solid $sign_up_color;
+            color: $sign_up_color;
+        }
+
+        .nav_mobile {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #collapse {
+            background-color: $main_color;
+            border-radius: 10px;
+            padding: 5px;
+            position: absolute;
+            right: 0%;
+            bottom: -190px;
+            ul {
+                padding: 10px;
+                li {
+                    display: block;
+                    padding: 5px 10px;
+                }
+            }
+        }
+
     }
 
     .jumbo  {
-        
+        padding-bottom: 40px;
          .jumbo_left {
             width: calc(100%/2);
              h1 {

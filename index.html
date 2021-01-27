@@ -21,8 +21,38 @@
     <header>
         <div class="container">
         <nav class="flex">
-            <div class="nav_left flex">asd</div>
-            <div class="nav_right flex">asd</div>
+            <div class="nav_left flex">
+                <img src="./assets/img/logo/logo.svg" alt="">
+            </div>
+            <div class="nav_right flex">
+                <ul>
+                    <li v-for="(item, index) in navbar" :key="index">
+                        <a href="">
+                        {{item}}
+                        </a>
+                    </li>
+                    <button class="btn">
+                        <img :src="logo_google" width="                   15px" alt="">
+                        Sign Up
+                    </button>
+                </ul>
+            </div>
+            <div class="nav_mobile flex none">
+                <i class="fas fa-bars" @click="openNav()"></i>
+            </div>
+            <div id="collapse" class="none">
+                <ul>
+                    <li v-for="(item, index) in navbar" :key="index">
+                        <a href="">
+                        {{item}}
+                        </a>
+                    </li>
+                    <button class="btn">
+                        <img :src="logo_google" width="                   15px" alt="">
+                        Sign Up
+                    </button>
+                </ul>
+            </div>
         </nav>
 
         <div class="jumbo flex wrap">
@@ -57,7 +87,7 @@
                 <div v-for="(title, index) in main_first_section" :key="index" class="flex main_card_container">
                     <h2> {{title.title}}</h2>
                     <div class="flex column card_main" v-for="(card, index) in title.cards" :key="index">
-                        <img :src="card.img" style="height: 40%;" alt="">
+                        <img :src="card.img" alt="">
                         <p>{{card.text}}</p>
                     </div>
                     <img :src="title.jumbo_pic" style="width: 250px;" alt="">
@@ -69,7 +99,7 @@
                  <div v-for="(title, index) in main_second_section" :key="index" class="flex main_card_container">
                      <h2> {{title.title}}</h2>
                      <div class="flex column card_main" v-for="(card, index) in title.cards" :key="index">
-                         <img :src="card.img" style="height: 40%;" alt="">
+                         <img :src="card.img" alt="">
                          <p>{{card.text}}</p>
                      </div>
                      <img :src="title.jumbo_pic" style="width: 250px;" alt="">
