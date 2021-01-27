@@ -57,10 +57,10 @@
                 <div v-for="(title, index) in main_first_section" :key="index" class="flex main_card_container">
                     <h2> {{title.title}}</h2>
                     <div class="flex column card_main" v-for="(card, index) in title.cards" :key="index">
-                        <img :src="card.img" style="height: 50%;" alt="">
+                        <img :src="card.img" style="height: 40%;" alt="">
                         <p>{{card.text}}</p>
                     </div>
-                    <img :src="title.jumbo_pic" style="width: 300px;" alt="">
+                    <img :src="title.jumbo_pic" style="width: 250px;" alt="">
                 </div>
             </div>
         </section>
@@ -69,11 +69,28 @@
                  <div v-for="(title, index) in main_second_section" :key="index" class="flex main_card_container">
                      <h2> {{title.title}}</h2>
                      <div class="flex column card_main" v-for="(card, index) in title.cards" :key="index">
-                         <img :src="card.img" style="height: 50%;" alt="">
+                         <img :src="card.img" style="height: 40%;" alt="">
                          <p>{{card.text}}</p>
                      </div>
-                     <img :src="title.jumbo_pic" style="width: 300px;" alt="">
+                     <img :src="title.jumbo_pic" style="width: 250px;" alt="">
                  </div>
+             </div>
+         </section>
+
+
+         <section id="main_third" class="flex column">
+             <div class="flex info_main" v-for="(item, index) in main_third_section" :key="index">
+                 <div class="info_card flex">
+                 <div class="flex">
+                <img :src="item.left_img" style="width: 450px;" alt="">
+                </div>
+                <div class="flex column">
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.description}}</p>
+                    <a href="">Learn more <i class="fas fa-arrow-right"></i></a>
+                    <img :src="item.right_img" style="width: 50%;" alt="">
+                </div>
+                </div>
              </div>
          </section>
     </main>

@@ -1,16 +1,36 @@
 main {
+
+    #main_first,#main_second {
     background-color: $main_color;
 
-    .main_card_container {
-      flex-wrap: wrap;
-      justify-content: center;
-      .card_main {
-        width: calc(100%/3);
-        align-items: center;
-      }
+        .main_card_container {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .card_main {
+                width: calc(100%/3);
+                align-items: center;
+            }
+        }
+
+    }
+
+    #main_third {
+
+
+
+        .info_main:nth-child(2n+2) {
+            justify-content: flex-end;
+            .info_card {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .info_card {
+            width: 80%;
+        }
     }
   
-
     
     }
 

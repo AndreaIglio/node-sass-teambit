@@ -39,7 +39,28 @@ var root = new Vue({
         img: "./assets/img/main/section_2/safe.png",
         text: "lorem"
       }]
-    }, {}]
+    }, {}],
+    main_third_section: [{
+      left_img: "./assets/img/main/section_3/1.jpg",
+      right_img: "./assets/img/main/section_3/2.jpg",
+      title: "Feedback to help teammates improve",
+      description: "Empower your teammates to know in real time what they are doing well and what they need to improve"
+    }, {
+      left_img: "./assets/img/main/section_3/1.jpg",
+      right_img: "./assets/img/main/section_3/2.jpg",
+      title: "Feedback to help teammates improve",
+      description: "Empower your teammates to know in real time what they are doing well and what they need to improve"
+    }, {
+      left_img: "./assets/img/main/section_3/1.jpg",
+      right_img: "./assets/img/main/section_3/2.jpg",
+      title: "Feedback to help teammates improve",
+      description: "Empower your teammates to know in real time what they are doing well and what they need to improve"
+    }, {
+      left_img: "./assets/img/main/section_3/1.jpg",
+      right_img: "./assets/img/main/section_3/2.jpg",
+      title: "Feedback to help teammates improve",
+      description: "Empower your teammates to know in real time what they are doing well and what they need to improve"
+    }]
   },
   methods: {}
 });
