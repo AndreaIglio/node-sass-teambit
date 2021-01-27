@@ -132,7 +132,24 @@
     </main>
     <!-- footer -->
     <footer>
-
+        <div class="container flex">
+            <div class="flex a">
+                <img src="./assets/img/logo/logo-small.svg" alt="">
+                <h3>
+                <span>Teambit</span>
+                helps teams create high performing cultures by making feedback a daily habit.</h3>
+            </div>
+            <div class="flex b">
+               <div class="flex column" v-for="(item, index) in footer" :key="index">
+                   <h2>{{item.title}}</h2>
+                   <ul>
+                       <li v-for="(element, index) in item.element" :key="index">
+                           {{element}}
+                       </li>
+                   </ul>
+               </div>
+            </div>
+        </div>
     </footer>
     </div>
 

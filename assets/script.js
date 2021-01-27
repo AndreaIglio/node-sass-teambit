@@ -76,6 +76,37 @@ let root = new Vue({
           "Make it habit to recognize and praise people who do great work.",
       },
     ],
+    footer: [
+      {
+        title: "Product",
+        element: [
+          "Feedback",
+          "Surveys",
+          "Reviews",
+          "Praise",
+          "Slack",
+          "Integration",
+          "Schedule a demo",
+          "Pricing",
+        ],
+      },
+      {
+        title: "About",
+        element: ["Feedback", "Surveys", "Reviews", "Praise"],
+      },
+      {
+        title: "Connect",
+        element: ["Feedback", "Surveys", "Reviews", "Praise"],
+      },
+      {
+        title: "Lobs",
+        element: ["Feedback", "Surveys", "Reviews", "Praise"],
+      },
+      {
+        title: "From the blog",
+        element: ['How to change your company culture: a four-step framework','How teams can be more productive by killing 8-hour workday','How to build high performing teams inspired by nature', "View all"],
+      },
+    ],
   },
   methods: {},
 });

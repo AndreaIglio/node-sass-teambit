@@ -1,3 +1,37 @@
 footer {
     background-color: white;
+    font-weight: bold;
+   
+        .a {
+            width: 20%;
+            align-items: flex-start;
+            h3 {
+                padding-left: 10px;
+            }
+            span {
+                color: $sign_up_color;
+            }
+            line-height: 1.5;
+        }
+
+        .b {
+            width: 80%;
+            padding-left: 40px;
+            div {
+                width: calc(100%/5);
+                padding: 0px 20px;
+                h2 {
+                    margin-bottom: 30px;
+                }
+                ul {
+                    list-style-type: none;
+                    li {
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+    
+    
+
 }
