@@ -1,3 +1,4 @@
+
 let root = new Vue({
   el: "#root",
   data: {
@@ -123,7 +124,11 @@ let root = new Vue({
         x.style.display = 'block';
       }
 
-     }
+     },
 
   },
+
+  mounted: {
+    
+  }
 });

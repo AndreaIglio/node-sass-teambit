@@ -42,7 +42,8 @@ header {
   background-color: white;
 }
 header nav {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   justify-content: space-between;
   border-bottom: 1px solid black;
   padding: 10px 0px;
@@ -93,6 +94,7 @@ header .jumbo {
   padding-bottom: 40px;
 }
 header .jumbo .jumbo_left {
+  justify-content: space-between;
   width: calc(100%/2);
 }
 header .jumbo .jumbo_left h1 {
@@ -127,7 +129,7 @@ header .jumbo .jumbo_right {
 }
 header .jumbo .jumbo_right img {
   width: 100%;
-  height: 70%;
+  height: 100%;
 }
 
 main #main_first, main #main_second {

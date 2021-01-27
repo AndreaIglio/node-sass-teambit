@@ -89,7 +89,8 @@ var root = new Vue({
         x.style.display = 'block';
       }
     }
-  }
+  },
+  mounted: {}
 });
 
 /***/ }),

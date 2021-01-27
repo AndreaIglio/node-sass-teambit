@@ -1,7 +1,7 @@
 header{
     background-color: white;
     nav {
-        position: relative;
+        position: sticky;
         justify-content: space-between;
         border-bottom: 1px solid black;
         padding: 10px 0px;
@@ -48,6 +48,7 @@ header{
     .jumbo  {
         padding-bottom: 40px;
          .jumbo_left {
+             justify-content: space-between;
             width: calc(100%/2);
              h1 {
                  font-size: 45px;
@@ -78,7 +79,7 @@ header{
             width: calc(100%/2);
             img {
                 width: 100%;
-                height: 70%;
+                height: 100%;
             }
          }
          
